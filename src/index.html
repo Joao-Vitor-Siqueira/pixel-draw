@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelDraw</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="gridFilter hidden" id="gridFilter">
+        <img src="../assets/png/grid.png" alt="">
+    </div>
+    
+    <div class="canvasContainer">
+        <canvas id="c2"></canvas>
+        <canvas id="c1"></canvas>
+        <canvas id="c0"></canvas>
+    </div>
+   
+    
+    <div class="layerMenu" id="layerMenu">
+        <label for="layer2">
+            <img class="layerBtn" src="../assets/svg/eye.svg" alt="visibility">
+        </label>
+        <div class="layerSelector" style="opacity: .5;" name="layer2" data-tooltip="Layer2"></div>
+        
+        <label for="layer1">
+            <img class="layerBtn" src="../assets/svg/eye.svg" alt="visibility">
+        </label>
+        <div class="layerSelector" style="opacity: .5;" name="layer1" data-tooltip="Layer1"></div>
+        
+        <label for="layer0">
+            <img class="layerBtn" src="../assets/svg/eye.svg" alt="visibility">
+        </label>
+         <div class="layerSelector" style="border: 6px solid lightgreen;" name="layer0" data-tooltip="Layer0"></div>
+    </div>
+
+    <ul class="menu">
+        
+        <li id="colorMenuBtn" style="background-color: black" data-tooltip="Colors"></li>
+        
+        <li id="toolMenuBtn" data-tooltip="Tools">
+            <img src="../assets/svg/pen.svg" alt="tools">
+        </li>
+        
+        <li id="undoBtn" data-tooltip="Undo">
+            <img src="../assets/svg/undo.svg" alt="undo">
+        </li>
+        
+        <li id="redoBtn" data-tooltip="Redo">
+            <img src="../assets/svg/redo.svg" alt="redo">
+        </li>
+
+        <li id="configMenuBtn" data-tooltip="Config">
+            <img src="../assets/svg/gear.svg" alt="config">
+        </li>
+
+        <dialog id="colorMenu">
+            <ul class="colorMenu center">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </dialog>
+        
+        <dialog id="configMenu" style="height: 150px;">
+            <ul class="configMenu">
+                <li>
+                    <label for="strokeSize">Stroke size: 
+                        <select name="strokeSize" id="strokeSize">
+                            <option value="1">1px</option>
+                            <option value="2">2px</option>
+                            <option value="5">5px</option>
+                            <option value="10" selected="selected">10px</option>
+                            <option value="15">15px</option>
+                            <option value="25">25px</option>
+                            <option value="50">50px</option>
+                        </select>
+                    </label>
+                </li>
+
+                <li>
+                    <label for="gridLabel">Show grid:
+                        <input type="checkbox" name="showGrid" id="showGrid"> 
+                        <label for="showGrid" id="gridLabel" name="gridLabel"></label>
+                    </label>
+                    
+                </li>
+            </ul>
+        </dialog>
+        
+        <dialog id="toolMenu" style="height: 60px;">
+            <ul class=" toolMenu center">
+                <li id="pencil" data-tooltip="Pencil">
+                    <img src="../assets/svg/pencil.svg" alt="pencil">
+                </li>
+                <li id="pen" data-tooltip="Pen">
+                    <img src="../assets/svg/pen.svg" alt="pen">
+                </li>
+                <li id="fill" data-tooltip="Fill">
+                    <img src="../assets/svg/fill.svg" alt="fill">
+                </li>
+                <li id="eraser" data-tooltip="Eraser">
+                    <img src="../assets/svg/eraser.svg" alt="eraser">
+                </li>
+            </ul>
+        </dialog>
+    </ul>  
+
+</body>
+</html>
+
+
+
+
+
