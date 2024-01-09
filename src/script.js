@@ -290,6 +290,9 @@ function paint(x,y){
             ctx[selectedLayer].lineCap = 'round';
             break;
         case "eraser":
+            //check if pixel is transparent
+            if(ctx[selectedLayer].getImageData(x,y,1,1).data.every(num => num == 0)) 
+                return;            
             ctx[selectedLayer].strokeStyle = '#ffffff';
             break;  
         case "fill":
