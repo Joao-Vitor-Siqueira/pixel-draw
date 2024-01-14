@@ -12,7 +12,7 @@ To run this project locally, follow these simple steps:
     - ```git clone https://github.com/Joao-Vitor-Siqueira/pixel-draw.git```
 2. **Navigate to the Project Directory:**
     - ```cd pixel-draw```
-3. **Open the game:**
+3. **Start the program:**
     - Locate the `index.html` file in the project diretory.
     - Open `index.html` with your preferred web browser.
   
