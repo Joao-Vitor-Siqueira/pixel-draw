@@ -2,6 +2,8 @@
 
 `Pixel-draw` is an illustration software made with the 	[Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API) that provides a simple and rich environment to assist artists and designers. Here's a brief overview of its key features and how to get it running on your machine. 
 
+Read this in other languages: [Português](README.PT.md).
+
 ![GIF demo](assets/gif/intro.gif)
 
 ## Getting Started
@@ -63,9 +65,9 @@ To run this project locally, follow these simple steps:
 ![Stroke size](assets/png/ui6.png)
 - The **Stroke size** can be changed by opening the **Config menu**  (last box of the **Illustration menu**).
 
-### Grid filter
+### Grid
 ![Stroke size](assets/png/ui7.png)
-- This software comes with a **Grid filter**, which can allow more precision when drawing.
+- This software comes with a **Grid** filter, which can allow more precision when drawing.
 
 ## UX and Accessibility
 
